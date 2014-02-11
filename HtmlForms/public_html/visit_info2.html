@@ -1,0 +1,149 @@
+<htmlform>
+	
+	<macros>
+		paperFormId = (Fill this in)
+		headerColor =#c0c0c0 
+                sectionHeader =#000000 
+		fontOnHeaderColor = white
+	</macros>
+    <style>
+		.section {
+			border: 1px solid $headerColor;
+			padding: 2px;
+			text-align: left;
+			margin-bottom: 1em;
+                        border-bottom-left-radius: 12px;
+                        border-bottom-right-radius: 12px;
+                        border-top-left-radius: 12px;
+                        border-top-right-radius: 12px;
+                       //color:#000000
+                        
+		}
+		.sectionHeader {
+			background-color: $headerColor;
+			color:  $sectionHeader;
+			display:block;
+			padding: 2px;
+                        position:relative;
+                        margin-left: 5px;
+                        margin-right: 5px;
+			font-weight: bold;
+                        text-align: center;
+                        height: 30px;
+		}
+	table.baseline-aligne tr td.ki {
+			vertical-align: baseline;
+                        position: relative;
+                        margin-left: 12px;
+                        
+		}
+                table.baseline-aligned td.label{
+                    color: brown;
+                }
+              
+	</style>
+        <section headerLabel="COMPREHENSIVE CARE CLINIC PATIENT CARD - MOH 257
+                  INITIAL AND FOLLOW UP VISIT">
+           
+		<table class="baseline-aligned">
+                    <tr >
+                           
+                        <td class="label">Other Medical Dispensed?:</td>
+                        <td><obs conceptId="1282"  /></td> 
+                            <td class="label">If yes Specify::</td>
+                        <td><obs conceptId="162230" /></td> 
+                          
+			</tr> 
+                        <tr>
+                            <td>ARV Drugs:</td>
+                        </tr>
+                         <tr>
+                            <td>ARV Drugs Adherence?:</td>
+                            <td><obs conceptId="1658" /></td> 
+                        </tr>
+                         <tr>
+                             <td>If ARV Drugs Adherence is Unsatisfactory, Why?:</td>
+                         </tr>
+                         <tr>
+                          <td>Unsatisfactory Reason:</td>
+                            <td><obs conceptId="160582" size="5" /></td> 
+                        </tr>
+                        
+                            <tr >
+                           
+                        <td class="label">ARV Regimen:</td>
+                         <td><obs conceptId="1251"  /></td> 
+                            <td class="label"> Dose:</td>
+                        <td><obs conceptId="1251" /></td> 
+                          
+			</tr> 
+                        <tr>
+                             <td>Laboratory Investigations:</td>
+                         </tr>
+                             <tr >
+                           
+                        <td class="label">CD4 Done (# or %):</td>
+                         <td><obs conceptId="5497"  /></td> 
+                            <td class="label">CD4 Date:</td>
+                            <td><encounterDate labelText="Visit Date:"/></td> 
+                          
+			</tr> 
+                          
+                             <tr >
+                           
+                        <td class="label">CD4 Count:</td>
+                         <td><obs conceptId="5497"  /></td> 
+                            <td class="label">CD4 %:</td>
+                            <td><obs  conceptId="730"  /></td> 
+                          
+			</tr>
+                             <tr >
+                           
+                        <td class="label">HGB:</td>
+                         <td><obs conceptId="21"  /></td> 
+                            <td class="label">HGB Result:</td>
+                            <td><obs  conceptId="21"  /></td> 
+                          
+			</tr> 
+                             <tr >
+                           
+                        <td class="label">RPR:</td>
+                         <td><obs conceptId="1619"  /></td> 
+                            <td class="label">RPR Result:</td>
+                            <td><obs  conceptId="1619"  /></td> 
+                          
+			</tr> 
+                             <tr >
+                           
+                        <td class="label">TB Spatum:</td>
+                         <td><obs conceptId="307"  /></td> 
+                            <td class="label">TB Spatum results:</td>
+                            <td><obs  conceptId="307"  /></td> 
+                          
+			</tr> 
+                        <tr> Other Lab Test:</tr>
+                              <tr >
+                           
+                        <td class="label">Refered to:</td>
+                         <td><obs conceptId="1272"  /></td> 
+                            <td class="label">If hospitalized, No. of Days:</td>
+                            <td><obs  conceptId="1272"  /></td> 
+                          
+			</tr> 
+                        <tr> 
+                            <td>At Risk Population:</td>
+                         <td><obs conceptId="1272"  /></td> 
+                        </tr>
+                            <tr >
+                           
+                        <td class="label">Date of Next Appointment :</td>
+                         <td><obs conceptId="5096"  /></td> 
+                            <td class="label">Clinician Initial:</td>
+                            <td><obs  conceptId="1473"  /></td> 
+                          
+			</tr>   
+                   
+                </table>
+             <submit/>
+        </section>
+</htmlform>

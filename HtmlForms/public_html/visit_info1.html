@@ -1,0 +1,190 @@
+<htmlform>
+	
+	<macros>
+		paperFormId = (Fill this in)
+		headerColor =#c0c0c0 
+                sectionHeader =#000000 
+		fontOnHeaderColor = white
+	</macros>
+
+	<style>
+		.section {
+			border: 1px solid $headerColor;
+			padding: 2px;
+			text-align: left;
+			margin-bottom: 1em;
+                        border-bottom-left-radius: 12px;
+                        border-bottom-right-radius: 12px;
+                        border-top-left-radius: 12px;
+                        border-top-right-radius: 12px;
+                       //color:#000000
+                        
+		}
+		.sectionHeader {
+			background-color: $headerColor;
+			color:  $sectionHeader;
+			display:block;
+			padding: 2px;
+                        position:relative;
+                        margin-left: 5px;
+                        margin-right: 5px;
+			font-weight: bold;
+                        text-align: center;
+                        height: 30px;
+		}
+	table.baseline-aligne tr td.ki {
+			vertical-align: baseline;
+                        position: relative;
+                        margin-left: 12px;
+                        
+		}
+                table.baseline-aligned td.label{
+                    color: brown;
+                }
+              
+	</style>
+
+	<span style="float:right">Paper Form ID: $paperFormId</span>
+        <div id="form1">
+        <section>
+            <table class="baseline-aligne">
+                <tr> 
+                    <td  >Patient id:</td>
+                    <td style="color:brown"> <lookup expression="patient.personId"/></td>
+                     <td >Patient Name:</td>
+                     <td style="color: brown"> <lookup expression="patient.personName"/></td>
+                      <td>Patient age:</td>
+                      <td style="color: brown"> <lookup expression="patient.personAge"/></td>
+                </tr>
+            </table>
+        </section>
+         
+	<section headerLabel="COMPREHENSIVE CARE CLINIC PATIENT CARD - MOH 257
+                  INITIAL AND FOLLOW UP VISIT">
+           
+		<table class="baseline-aligned">
+                    <tr >
+                           
+                        <td class="label">Visit Date:</td>
+                        <td><encounterDate labelText="Visit Date:"/></td> 
+                          <td class="label">Visit type:</td>
+                                <td>
+                                     <obs conceptId="161643" />
+                                </td>
+			</tr>
+			
+                        <tr><td>Duration Since (In Months)</td></tr>
+                      
+                        <tr >
+                           
+                        <td class="label">Start ART:</td>
+                        <td><encounterDate labelText="Visit Date:"/></td> 
+                           <td class="label">Current Regimen:</td>
+                        <td><encounterDate labelText="Visit Date:"/></td>
+			</tr>
+                         <tr >
+                           
+                        <td class="label">Weight (kgs)/BP:</td>
+                        <td><obs conceptId="5089" size="5"/></td> 
+                            <td class="label">Height (cm):</td>
+                        <td><obs conceptId="5090" size="5"/></td> 
+                          
+			</tr>
+                         <tr >
+                           
+                        <td class="label">BMI:</td>
+                        <td><obs conceptId="1342" size="5"/></td> 
+                         
+			</tr>
+                        
+                        <tr><td>Pregnancy</td></tr>
+                        <tr >
+                           
+                        <td class="label">Status:</td>
+                        <td><obs conceptId="5272" style="no_yes_dropdown" /></td> 
+                            <td class="label">EDD:</td>
+                        <td><obs conceptId="5596" size="5"/></td> 
+                          
+			</tr>
+                        <tr><td>Family Planning</td></tr>
+                        <tr >
+                           
+                        <td class="label">FP Status:</td>
+                        <td><obs conceptId="160653" style="no_yes_dropdown" /></td> 
+                            <td class="label">FP/No FP:</td>
+                        <td><obs conceptId="965" style="no_yes_dropdown"/></td> 
+                          
+			</tr>
+                        <tr>
+                               <td class="label">FP method:</td>
+                        <td><obs conceptId="374AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"  style="checkbox" size="5"/></td> 
+                          
+                        </tr>
+                        
+                          <tr><td>Tuberculosis status</td></tr>
+                        <tr >
+                           
+                        <td class="label"> Status:</td>
+                        <td><obs conceptId="1659" style="no_yes_dropdown" /></td> 
+                            <td class="label">TB RX:</td>
+                        <td><obs conceptId="830" size="5"/></td> 
+                          
+			</tr>
+                        <tr>
+                               <td class="label">Potential Side Effects:</td>
+                        <td> 
+                      
+                        <obs conceptId="159935AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" style="checkbox" size="5"/> 
+                        
+                        </td> 
+                    
+                        </tr>
+                       <tr>
+                               <td class="label">New OI and Othet Problems:</td>
+                        <td>
+                      
+                       </td> 
+                          
+
+                        </tr>
+                          <tr>
+                               <td class="label">WHO Stage:</td>
+                        <td><obs conceptId="5356" /></td> 
+                          
+
+                        </tr>
+                 <tr><td>Cotrimozale</td></tr>
+                        <tr >
+                           
+                        <td class="label">Cotrimozale:</td>
+                        <td><obs conceptId="161652"  /></td> 
+                            <td class="label">Adherence:</td>
+                        <td><obs conceptId="161652" /></td> 
+                          
+			</tr>   
+                        <tr >
+                           
+                        <td class="label">CTX Dispensed:</td>
+                        <td><obs conceptId="162229"  /></td> 
+                            <td class="label">INH Dispensed:</td>
+                        <td><obs conceptId="162230" /></td> 
+                          
+			</tr> 
+                        
+                  
+                </table>         
+                        
+	</section>
+</div>
+        <div id="form2">
+    <section>
+        
+    </section>
+    
+</div>
+
+
+	<submit/>
+
+
+</htmlform>
