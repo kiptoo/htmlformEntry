@@ -7,6 +7,10 @@
 		fontOnHeaderColor = white
 	</macros>
      <style>
+         .label.headerColor
+         {
+             font-weight: bold;
+         }
 		.section {
 			border: 1px solid $headerColor;
 			padding: 2px;
@@ -46,7 +50,51 @@
                   INITIAL AND FOLLOW UP VISIT">
         <fieldset>
              <legend>Patient Source</legend>
+             <table>
+                 <tr>
+                     <td class="label">
+                            Entry Point
+                     </td>
+                     <td>
+                         <obs conceptId="160540"></obs>
+                     </td>
+                     <td class="label">
+                         if other specify:
+                     </td>
+                     <td>
+                         <input/>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td colspan="2">Transfer in</td>
+                     <td colspan="2">From</td>
+                 </tr>
+                 <tr>
+                     <td class="label">Date:</td>
+                     <td>
+                         <obs conceptId="160534"></obs>
+                     </td>
+                     <td class="label">District:</td>
+                     <td>
+                         <obs conceptId="161551"></obs>
+                     </td>
+                 </tr>
+
+                 <tr>
+                     <td class="label">Facility:</td>
+                     <td>
+                         <obs conceptId="161550"></obs>
+                     </td>
+                     <td class="label">
+                         Date started ART:
+                     </td>
+                     <td>
+                         <obs conceptId="159599"></obs>
+                     </td>
+                 </tr>
+             </table>
         </fieldset>
        
  </section>
+    <submit/>
 </htmlform>
