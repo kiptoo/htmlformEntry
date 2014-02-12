@@ -40,13 +40,66 @@
                 table.baseline-aligned td.label{
                     color: brown;
                 }
-              
+                
+           th
+            {
+                
+            border-bottom:1px solid black;
+            border-collapse:collapse;
+            }   
+            th,td
+            {
+                color:blue;
+            padding:5px;
+            }      
 	</style>
  <section headerLabel="COMPREHENSIVE CARE CLINIC PATIENT CARD - MOH 257
                   INITIAL AND FOLLOW UP VISIT">
         <fieldset>
-             <legend>Transfer Out and Death</legend>
+             <legend>Transfer Out</legend>
+                <table style="background-color:lightblue; border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px; ">
+               
+
+                 <th>*Date</th>
+                
+                 <th>Where</th>
+                <th>Reason</th>
+                 <th></th>
+                   
+     <tr>
+         <td><obs conceptId="160649"/></td>
+        <td><obs conceptId="159495"/></td> 
+        <td><input/></td>
+        <td><button>Add</button></td>
+        
+      </tr>
+             </table>
         </fieldset>
+     <fieldset>
+          <legend>Death</legend>
+              <table style="background-color:lightblue; border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px; ">
+               
+
+                 <th>*Date</th>
+                 
+                 <th>Why</th>
+                
+                 <th></th>
+                   
+     <tr>
+         <td><obs conceptId="1543"/></td>
+        <td><input /></td> <!-- reason why he/she died-->
        
+        <td><button>Add</button></td>
+        
+      </tr>
+             </table>
+     </fieldset>
  </section>
 </htmlform>
