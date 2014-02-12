@@ -40,12 +40,47 @@
                 table.baseline-aligned td.label{
                     color: brown;
                 }
-              
+           th
+            {
+                
+            border-bottom:1px solid black;
+            border-collapse:collapse;
+            }   
+            th,td
+            {
+                color:blue;
+            padding:5px;
+            }
 	</style>
  <section headerLabel="COMPREHENSIVE CARE CLINIC PATIENT CARD - MOH 257
                   INITIAL AND FOLLOW UP VISIT">
         <fieldset>
              <legend>Hiv Status of Family Members</legend>
+             <table style="background-color:lightblue; border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px; ">
+               
+
+                 <th>Name of Member</th>
+                 <th>Age</th>
+                 <th>Relation</th>
+                 <th>HIV(P/NDK)</th>
+                 <th>In care?</th>
+                 <th>CC No</th>
+                 <th></th>
+                   
+     <tr>
+         <td><obs conceptId="160750"/></td>
+        <td><obs conceptId="160751"/></td> 
+        <td><obs conceptId="1560"/></td>
+        <td><obs conceptId="1169"/></td>
+        <td><obs conceptId="160749" /></td> 
+        <td><obs conceptId="160752"/></td>
+        <td><button>Add</button></td>
+        
+      </tr>
+             </table>
         </fieldset>
        
  </section>
