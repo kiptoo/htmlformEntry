@@ -40,13 +40,47 @@
                 table.baseline-aligned td.label{
                     color: brown;
                 }
-              
+                th
+            {
+                
+            border-bottom:1px solid black;
+            border-collapse:collapse;
+            }   
+            th,td
+            {
+                color:blue;
+            padding:5px;
+            }      
 	</style>
  <section headerLabel="COMPREHENSIVE CARE CLINIC PATIENT CARD - MOH 257
                   INITIAL AND FOLLOW UP VISIT">
-        <fieldset>
+        
+           <fieldset>
              <legend>ART Treatment Interruptions</legend>
+             <table style="background-color:lightblue; border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px; ">
+               
+
+                 <th>Date</th>
+                 <th>Reason for Interruption</th>
+                 <th>Date Restarted</th>
+                 
+                 <th></th>
+                   
+     <tr>
+         <td><obs conceptId="160739"/></td>
+        <td><obs conceptId="1252"/></td> 
+        <td><obs conceptId="159599"/></td>
+        
+        <td><button>Add</button></td>
+        
+      </tr>
+             </table>
+                <submit/>
         </fieldset>
        
  </section>
+       
 </htmlform>
