@@ -1,12 +1,17 @@
 <htmlform>
-	
+
 	<macros>
 		paperFormId = (Fill this in)
-		headerColor =#c0c0c0 
-                sectionHeader =#000000 
+		headerColor =#c0c0c0
+                sectionHeader =#000000
 		fontOnHeaderColor = white
 	</macros>
      <style>
+        .label
+        {
+            font-weight: bold;
+            color: #d18035;
+        }
 		.section {
 			border: 1px solid $headerColor;
 			padding: 2px;
@@ -17,7 +22,7 @@
                         border-top-left-radius: 12px;
                         border-top-right-radius: 12px;
                        //color:#000000
-                        
+
 		}
 		.sectionHeader {
 			background-color: $headerColor;
@@ -35,54 +40,90 @@
 			vertical-align: baseline;
                         position: relative;
                         margin-left: 12px;
-                        
+
 		}
                 table.baseline-aligned td.label{
                     color: brown;
                 }
-              
+
 	</style>
  <section headerLabel="COMPREHENSIVE CARE CLINIC PATIENT CARD - MOH 257
                   INITIAL AND FOLLOW UP VISIT">
         <fieldset>
-             <legend>ART History</legend>
-            <table>
+             <legend><b>ART History</b></legend>
+            <table align="center">
                 <tr>
-                    <td class="label" colspan="2">
-                        Previously on ARVs (PMTC & PEP included)?
+                    <td class="label">
+                        Previously on ARVs (PMTC and PEP included)?
                     </td>
-                    <td colspan="2">
-                        <obs conceptId="160533"></obs>
+                    <td style="text-align: left">
+                        <obs conceptId="160533" style="no_yes_dropdown"></obs>
                     </td>
                 </tr>
 
                 <tr>
-                    <td colspan="4">If "Yes"then List Drugs</td>
+                    <td>If "Yes" then List Drugs</td>
                 </tr>
-                <tr >
-                    <td class="label">
+                </table>
+                <table style="background: #dffff5;padding-bottom: 2%;" align="center">
+                <tr>
+                    <td class="label" style="color: #00a0ff;">
                         # 	Purpose
                     </td>
-                    <td class="label">
+                    <td class="label" style="color: #00a0ff;">
                         Drug Name
                     </td>
-                    <td class="label">
+                    <td class="label" style="color: #00a0ff;">
                         Date Last Used
                     </td>
                 </tr>
+                <tr><td colspan="4"><hr/></td></tr>
+                <tr>
+                <td>
+                    <input/>
+                </td>
+                <td>
+                    <obs conceptId="1088"></obs>
+                </td>
+                <td>
+                    <input/>
+                </td>
+                <td><button>ADD</button></td>
+                </tr>
+                </table>
+
+                 <table align="center">
+                <tr>
+                    <td class="label">Date confirmed HIV+</td>
+                    <td>
+                        <obs conceptId="160554"></obs>
+                    </td>
+                    <td class="label">Where?</td>
+                    <td>
+                        <obs conceptId="159936"></obs>
+                    </td>
+                </tr>
 
                 <tr>
-                    <obs conceptId="160540"></obs>
-                </tr>
-                <tr>
-                    <obs conceptId="160540"></obs>
-                </tr>
-                <tr>
-                    <obs conceptId="160540"></obs>
+                    <td class="label">Date enrolled in HIV Care?</td>
+                    <td>
+                        <obs conceptId="160555"></obs>
+                    </td>
+                    <td class="label">WHO Stage:</td>
+                    <td>
+                        <obs conceptId="160553"></obs>
+                    </td>
                 </tr>
 
+                <tr>
+                    <td class="label">Any known Drug Allergies?</td>
+                    <td>
+                        <input/>
+                    </td>
+                </tr>
             </table>
         </fieldset>
-       
+
  </section>
+    <submit/>
 </htmlform>
